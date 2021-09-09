@@ -4,8 +4,15 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
-    "lint": "eslint src  --max-warnings=0",
-    "start": "react-native start"
+    "start": "react-native start",
+    "postinstall": "husky install",
+    "lint": "eslint src  --max-warnings=0"
+  },
+  "lint-staged": {
+    "*.ts(x)?": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
   },
   "dependencies": {
     "expo": "~42.0.1",
@@ -36,6 +43,8 @@
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
     "jest-expo": "^42.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "typescript": "^4.4.2"
   },
   "private": true
