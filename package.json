@@ -6,12 +6,12 @@
     "web": "expo start --web",
     "start": "react-native start",
     "postinstall": "husky install",
+    "test": "jest",
     "lint": "eslint src --max-warnings=0"
   },
   "lint-staged": {
     "*.ts(x)?": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+      "yarn lint --fix"
     ]
   },
   "dependencies": {
