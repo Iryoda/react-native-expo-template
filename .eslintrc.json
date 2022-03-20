@@ -24,6 +24,7 @@
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "jest/no-disabled-tests": "warn",
+    "react/react-in-jsx-scope": "off",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",

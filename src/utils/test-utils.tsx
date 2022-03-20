@@ -1,4 +1,3 @@
-import React from 'react';
 import { theme } from '@styles/default.theme';
 import { render } from '@testing-library/react-native';
 import { ThemeProvider } from 'styled-components/native';
